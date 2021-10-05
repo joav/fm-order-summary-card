@@ -8,30 +8,36 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <main>
+    <div class="card">
+      <img class="card-header" src="./images/illustration-hero.svg" alt="Persona escuchando música"></img>
+      <div class="card-body">
+        <h4>Order Summary</h4>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <div class="selected-plan">
+          <img src="./images/icon-music.svg" alt="Icono de música">
+          <div class="plan-detail">
+            <span class="plan-name">Annual Plan</span>
+            <span class="plan-value">$59.99/year</span>
+          </div>
+          <a href="javascript:;">Change</a>
+        </div>
+        <button>Proceed to Payment</button>
+        <a href="javascript:;" class="cancel">Cancel Order</a>
+      </div>
+    </div>
+  </main>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
